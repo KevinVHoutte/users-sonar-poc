@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping
-    public UserResource getUser(){
+    private UserResource getUser(){
         return new UserResource("Bob");
     }
 
